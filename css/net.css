@@ -1,0 +1,120 @@
+/*declar variáveis*/
+:root
+{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* indica que o tamanho agora levará em conta até a borda -- ou seja, o width será a soma do conteúdo com a borda e o padding.*/
+}
+
+body
+{
+    background: var(--preto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white
+}
+
+header .container
+{
+    display: flex;
+    flex-direction: row; /*alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal*/
+    align-items: center;
+    justify-content: space-between; /*o alinhamento dos itens ao longo do eixo principal do container.*/
+}
+
+header .logo
+{
+    margin-left: 10px;
+    color: var(--vermelho);
+    font-family: arial black, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+header nav a
+{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover
+{
+    color: #fff;
+}
+
+
+.main-movie
+{
+    font-size: 20px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa.jpg');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-movie .description{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.main-movie .titel
+{
+    margin-top: 15%;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.botao
+{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    font-size: 15px;
+    
+    cursor: pointer;
+    transform: .3s ease all;
+}
+
+.botao:hover
+{
+    background-color: white;
+    color: black;
+}
+
+.botao i
+{
+    margin-right: 10px;
+}
+
+.container
+{
+    margin-left: 20px;
+}
+
+.main-movie .container
+{
+    width: 48%;
+}
+
+
+.boxe-series
+{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.main-movie{
+    margin-top: 5px;
+}
